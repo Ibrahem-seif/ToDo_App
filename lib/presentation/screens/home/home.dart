@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:todoo_app/core/utils/colors_manager.dart';
+import 'package:todoo_app/presentation/screens/home/add_bottom_sheet/add_bottom_sheet.dart';
 import 'package:todoo_app/presentation/screens/home/tabs/settings_tab/settings_tab.dart';
 import 'package:todoo_app/presentation/screens/home/tabs/tasks_tab/tasks_tab.dart';
 
@@ -64,8 +66,13 @@ class _HomeScreenState extends State<Home> {
 
   Widget buildFab() {
     return FloatingActionButton(
-      onPressed: () {},
-      child: const Icon(Icons.add),
+      onPressed: () {
+        AddBottomSheet.show(context);
+      },
+      child: const Icon(
+        Icons.add,
+        color: ColorsManager.white,
+      ),
     );
   }
 }
