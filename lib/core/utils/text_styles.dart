@@ -17,6 +17,30 @@ class LightTextStyles {
     fontSize: 14,
     color: ColorsManager.blue,
   );
+  static TextStyle bottomSheetTitle = GoogleFonts.poppins(
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+    color: ColorsManager.black,
+  );
+  static TextStyle hint = GoogleFonts.poppins(
+    fontSize: 14,
+    color: ColorsManager.gray,
+  );
+  static TextStyle taskTitle = GoogleFonts.poppins(
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+    color: ColorsManager.blue,
+  );
+  static TextStyle taskDetails = GoogleFonts.poppins(
+    fontSize: 14,
+    // fontWeight: FontWeight.w700,
+    color: ColorsManager.black,
+  );
+  static TextStyle calnderText = GoogleFonts.roboto(
+    fontSize: 15,
+    fontWeight: FontWeight.w700,
+    color: ColorsManager.black,
+  );
 }
 
 class DarkTextStyles {
@@ -33,5 +57,29 @@ class DarkTextStyles {
   static TextStyle settingsItem = GoogleFonts.poppins(
     fontSize: 14,
     color: ColorsManager.blue,
+  );
+  static TextStyle bottomSheetTitle = GoogleFonts.poppins(
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+    color: ColorsManager.white,
+  );
+  static TextStyle hint = GoogleFonts.poppins(
+    fontSize: 14,
+    color: ColorsManager.gray,
+  );
+  static TextStyle taskTitle = GoogleFonts.poppins(
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+    color: ColorsManager.blue,
+  );
+  static TextStyle taskDetails = GoogleFonts.poppins(
+    fontSize: 14,
+    // fontWeight: FontWeight.w700,
+    color: ColorsManager.white,
+  );
+  static TextStyle calnderText = GoogleFonts.roboto(
+    fontSize: 15,
+    fontWeight: FontWeight.w700,
+    color: ColorsManager.white,
   );
 }

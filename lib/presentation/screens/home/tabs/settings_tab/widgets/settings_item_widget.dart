@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:todoo_app/core/utils/colors_manager.dart';
 import 'package:todoo_app/core/utils/text_styles.dart';
+import 'package:todoo_app/my_app.dart';
 
 class SettingsItemWidget extends StatefulWidget {
   final String item1;
@@ -26,6 +28,8 @@ class _SettingsItemWidgetState extends State<SettingsItemWidget> {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
+        margin: EdgeInsets.only(bottom: 30.h),
+        height: 60.h,
         padding: const EdgeInsets.all(5),
         decoration: BoxDecoration(
           color: ColorsManager.black,
@@ -41,6 +45,8 @@ class _SettingsItemWidgetState extends State<SettingsItemWidget> {
             ),
             const Spacer(),
             DropdownButton<String>(
+              iconEnabledColor: ColorsManager.blue,
+              underline: Container(),
               borderRadius: BorderRadius.circular(10),
               items: <String>[widget.item1, widget.item2].map((String value) {
                 return DropdownMenuItem<String>(
